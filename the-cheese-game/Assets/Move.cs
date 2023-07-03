@@ -2,25 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class Move : MonoBehaviour
+public class Move : MovingObject
 {
     // Start is called before the first frame update
-    Rigidbody2D rigid;
-    public Vector2 inputVec;
-    public float speed;
-    void Awake()
-    {
-        rigid = GetComponent<Rigidbody2D>();
-        
-    }
-    void Start()
-    {
-        
-    }
+    private Vector2 inputVec;
+
     void FixedUpdate()
     {
-        Vector2 nextVec = inputVec.normalized * speed * Time.fixedDeltaTime;
-        rigid.AddForce(nextVec);
+        Vector2 nextVec = inputVec;
+        rigid.velocity = nextVec;
     }
     void OnMove(InputValue value)
     {
