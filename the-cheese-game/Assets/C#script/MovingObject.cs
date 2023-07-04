@@ -7,7 +7,7 @@ public class MovingObject : MonoBehaviour
     public Rigidbody2D rigid;
     public KeyInput InputManager;
 
-    public void Awake()
+    private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         //AddMyself2InputManager();
