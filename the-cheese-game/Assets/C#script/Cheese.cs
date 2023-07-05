@@ -33,7 +33,7 @@ public class Cheese : Move
                                      CheeseColor.b * freshness / MaxFreshness);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -41,11 +41,8 @@ public class Cheese : Move
             slider.value += restoreEnergy;
             AdjustFreshness(MaxFreshness);
         }
-    }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if(collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Wall"))
         {
             AdjustFreshness(freshness - Time.deltaTime);
 

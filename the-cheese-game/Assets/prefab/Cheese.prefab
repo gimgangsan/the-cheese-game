@@ -180,6 +180,6 @@ MonoBehaviour:
   rigid: {fileID: 0}
   InputManager: {fileID: 0}
   slider: {fileID: 0}
-  restoreEnergy: 10
+  restoreEnergy: 12
   freshness: 3
   MaxFreshness: 0.5
