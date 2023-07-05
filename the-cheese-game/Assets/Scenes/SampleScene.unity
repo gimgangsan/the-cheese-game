@@ -1475,5 +1475,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese
       objectReference: {fileID: 0}
+    - target: {fileID: 8422890528332115958, guid: a279f5aec105cd5488b840e0c0419fd3, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1428478293}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a279f5aec105cd5488b840e0c0419fd3, type: 3}

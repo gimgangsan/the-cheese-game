@@ -769,7 +769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &539349792
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1088,8 +1088,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e4b5e434727354794b36d63b70f4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 50
-  height: 50
+  width: 5
+  height: 5
   WallPrefab: {fileID: 7033899208795868776, guid: b86ae19ba99a9744f995cc0f71273848, type: 3}
 --- !u!212 &1278798003
 SpriteRenderer:
@@ -1549,6 +1549,14 @@ PrefabInstance:
     - target: {fileID: 8083041522293970895, guid: a279f5aec105cd5488b840e0c0419fd3, type: 3}
       propertyPath: m_Name
       value: Cheese
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422890528332115958, guid: a279f5aec105cd5488b840e0c0419fd3, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1428478293}
+    - target: {fileID: 8422890528332115958, guid: a279f5aec105cd5488b840e0c0419fd3, type: 3}
+      propertyPath: restoreEnergy
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a279f5aec105cd5488b840e0c0419fd3, type: 3}

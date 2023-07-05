@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cheese : Move
 {
     SpriteRenderer sprite;
     Color CheeseColor;
-
+    [SerializeField] private Slider slider;
+    public int restoreEnergy;
 
     public float freshness = 0.5f;
     public float MaxFreshness = 0.5f;
@@ -36,6 +38,7 @@ public class Cheese : Move
         if (collision.gameObject.CompareTag("Player"))
         {
             Teleport();
+            slider.value += restoreEnergy;
             AdjustFreshness(MaxFreshness);
         }
     }
